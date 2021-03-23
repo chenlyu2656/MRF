@@ -1,3 +1,6 @@
+library(betareg)
+library(CompQuadForm)
+
 source('MRF_fun.r')
 
 # trait sample (n=300)
@@ -25,10 +28,10 @@ p.ggrf.b1   <-MRF(trait$y1,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),typ
 p.ggrf.b2   <-MRF(trait$y2,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),type='beta',kernel='GR')$pvalue
 
 # MRF can also be used assuming methylation trait follows a normal distribution after logit transformation
-trait$y.l0<-log(trait$y0/(1-trait$y0))
-trait$y.l1<-log(trait$y1/(1-trait$y1))
-trait$y.l2<-log(trait$y2/(1-trait$y2))
+y.l0<-log(trait$y0/(1-trait$y0))
+y.l1<-log(trait$y1/(1-trait$y1))
+y.l2<-log(trait$y2/(1-trait$y2))
 
-p.ggrf.l0   <-MRF(trait$y.l0,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),type='normal',kernel='GR')$pvalue
-p.ggrf.l1   <-MRF(trait$y.l1,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),type='normal',kernel='GR')$pvalue
-p.ggrf.l2   <-MRF(trait$y.l2,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),type='normal',kernel='GR')$pvalue
+p.ggrf.l0   <-MRF(y.l0,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),type='normal',kernel='GR')$pvalue
+p.ggrf.l1   <-MRF(y.l1,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),type='normal',kernel='GR')$pvalue
+p.ggrf.l2   <-MRF(y.l2,Z=as.matrix(geno),X=as.matrix(cov),weights=(wt^2),type='normal',kernel='GR')$pvalue
