@@ -6,9 +6,9 @@ Available [here](./Codes/MRF_fun.R)
 
 # Tutorial
 Sample data availability
-- [Methylation trait](./Sample_Data/Trait.txt)
-- [Genotypes](./Sample_Data/Genotype.txt)
-- [Covariates](./Sample_Data/Covariate.txt)
+- [Methylation trait](./Sample Data/Trait.txt)
+- [Genotypes](./Sample Data/Genotype.txt)
+- [Covariates](./Sample Data/Covariate.txt)
 
 Sample code availability
 - [Example](./Codes/MRF_sample_code.R)
