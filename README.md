@@ -11,4 +11,4 @@ Sample data availability
 - [Covariates](./Example/Covariate.txt)
 
 Sample code availability
-- [Example](./Example/MRF_sample_code.R)
+- [Example](./Example/Example.R)
