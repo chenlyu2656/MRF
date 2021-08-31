@@ -1,7 +1,7 @@
 # Methylation Random Field Method
 The Methylation Random Field (MRF) method is developed to detect methylation quantitative trait loci (mQTLs) by testing the association between the methylation level of a CpG site and a set of genetic variants within a genomic region.
 
-The proposed MRF has two major advantages over existing approaches:
+The proposed MRF has two major advantages:
 1) It uses a beta distribution to characterize the bimodal and interval properties of the methylation trait at a CpG site;
 2) It considers multiple common and rare genetic variants within a genomic region to identify mQTLs. 
 
