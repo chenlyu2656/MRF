@@ -17,5 +17,5 @@ Sample data availability
 Sample code availability
 - [Example](./Example/Example.R)
 
-Reference:
+# Reference:
 Lyu, Chen, Manyan Huang, Nianjun Liu, Zhongxue Chen, Philip J. Lupo, Benjamin Tycko, John S. Witte, Charlotte A. Hobbs, and Ming Li. "Detecting methylation quantitative trait loci using a methylation random field method." Briefings in Bioinformatics (2021)
